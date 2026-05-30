@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OVA — Energías Renovables · Contenido</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- TOP HEADER -->
+  <header class="top-header">
+    <div class="logo-area">
+      <button class="hamburger-btn" id="hamburgerBtn" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+      <img src="OIP.webp" alt="Logo Unicor" onerror="this.style.display='none'" />
+      <div class="header-title">
+        OVA · Energías Renovables
+        <span>Institución Educativa Cristóbal Colón · Grado 9</span>
+      </div>
+    </div>
+    <a href="index.html" style="font-size:.8rem;opacity:.75;font-weight:700;color:var(--white);background:rgba(255,255,255,.1);padding:6px 14px;border-radius:999px;">← Portada</a>
+  </header>
+
+  <!-- SIDEBAR OVERLAY -->
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <!-- INNER LAYOUT -->
+  <div class="inner-layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-brand">
+        <div class="sb-title">⚡ Energías Renovables</div>
+        <div class="sb-sub">OVA · Grado 9 · 2026</div>
+      </div>
+      <nav>
+        <span class="nav-section-label">Navegación</span>
+
+        <button class="nav-item active" data-section="contenido" id="nav-contenido">
+          <span class="nav-icon">📖</span>
+          Contenido
+        </button>
+
+        <button class="nav-item open" data-section="actividades" id="nav-actividades">
+          <span class="nav-icon">🎯</span>
+          Actividades
+          <span class="nav-chevron">›</span>
+        </button>
+        <div class="sub-nav open" id="sub-actividades">
+          <button class="sub-nav-item" data-act="act1" data-section="actividades">
+            <span class="num">1</span> Crucigrama
+          </button>
+          <button class="sub-nav-item" data-act="act2" data-section="actividades">
+            <span class="num">2</span> Ordenar pasos
+          </button>
+          <button class="sub-nav-item" data-act="act3" data-section="actividades">
+            <span class="num">3</span> Selección múltiple
+          </button>
+          <button class="sub-nav-item" data-act="act4" data-section="actividades">
+            <span class="num">4</span> Clasificar energías
+          </button>
+        </div>
+
+        <button class="nav-item" data-section="examen" id="nav-examen">
+          <span class="nav-icon">📝</span>
+          Examen
+        </button>
+
+        <button class="nav-item" data-section="recursos" id="nav-recursos">
+          <span class="nav-icon">🔗</span>
+          Recursos
+        </button>
+
+        <button class="nav-item" data-section="creditos" id="nav-creditos">
+          <span class="nav-icon">👥</span>
+          Créditos
+        </button>
+      </nav>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+      <!-- ══════════════════ CONTENIDO ══════════════════ -->
+      <section class="section-panel active" id="panel-contenido">
+        <h2 class="page-title">
+          <span class="pt-icon">📖</span>
+          Contenido
+        </h2>
+        <p class="page-desc">Aprende sobre los distintos tipos de energías renovables y su importancia para el futuro del planeta.</p>
+
+        <!-- Video -->
+        <div class="card" style="margin-bottom:20px;">
+          <div class="card-title"><span class="ct-icon">🎬</span> Video Explicativo</div>
+          <div class="video-wrapper">
+  <iframe
+    src="https://www.youtube-nocookie.com/embed/-pHX9rNmwwU?rel=0&modestbranding=1"
+    title="Energías Renovables"
+    frameborder="0"
+    width="100%"
+    height="315"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen
+    loading="lazy">
+  </iframe>
+</div>
+        </div>
+
+        <!-- Info cards -->
+        <div class="card">
+          <div class="card-title"><span class="ct-icon">⚡</span> Tipos de Energía Renovable</div>
+          <p style="font-size:.88rem;color:var(--gray-500);margin-bottom:4px;">Las energías renovables son aquellas que provienen de fuentes naturales que se regeneran constantemente.</p>
+          <div class="info-grid">
+            <div class="info-card">
+              <div class="ic-icon">☀️</div>
+              <div class="ic-title">Energía Solar</div>
+              <div class="ic-text">Aprovecha la radiación del sol mediante paneles fotovoltaicos o colectores térmicos para generar electricidad o calor.</div>
+            </div>
+            <div class="info-card">
+              <div class="ic-icon">💨</div>
+              <div class="ic-title">Energía Eólica</div>
+              <div class="ic-text">Convierte la energía del viento en electricidad usando aerogeneradores (molinos de viento modernos).</div>
+            </div>
+            <div class="info-card">
+              <div class="ic-icon">💧</div>
+              <div class="ic-title">Energía Hidráulica</div>
+              <div class="ic-text">Utiliza la fuerza del agua en movimiento para mover turbinas y generar electricidad en centrales hidroeléctricas.</div>
+            </div>
+            <div class="info-card">
+              <div class="ic-icon">🌿</div>
+              <div class="ic-title">Biomasa</div>
+              <div class="ic-text">Obtiene energía a partir de la quema o transformación de materia orgánica como residuos vegetales o animales.</div>
+            </div>
+            <div class="info-card">
+              <div class="ic-icon">🌋</div>
+              <div class="ic-title">Energía Geotérmica</div>
+              <div class="ic-text">Aprovecha el calor interno de la Tierra que surge de volcanes, géiseres y fuentes termales para generar electricidad.</div>
+            </div>
+            <div class="info-card">
+              <div class="ic-icon">🌊</div>
+              <div class="ic-title">Energía Mareomotriz</div>
+              <div class="ic-text">Genera electricidad a partir del movimiento de las mareas y las corrientes marinas oceánicas.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ventajas -->
+        <div class="card" style="margin-top:20px;">
+          <div class="card-title"><span class="ct-icon">✅</span> ¿Por qué son importantes?</div>
+          <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-top:8px;">
+            <div style="background:var(--blue-xpale);border-radius:var(--radius-sm);padding:14px;border:1.5px solid var(--blue-pale);">
+              <div style="font-weight:800;font-size:.88rem;color:var(--blue-dark);margin-bottom:4px;">🌍 No contaminan</div>
+              <div style="font-size:.8rem;color:var(--gray-500);">No producen gases de efecto invernadero que dañen la atmósfera.</div>
+            </div>
+            <div style="background:var(--blue-xpale);border-radius:var(--radius-sm);padding:14px;border:1.5px solid var(--blue-pale);">
+              <div style="font-weight:800;font-size:.88rem;color:var(--blue-dark);margin-bottom:4px;">♾️ Son inagotables</div>
+              <div style="font-size:.8rem;color:var(--gray-500);">El sol, el viento y el agua siempre estarán disponibles.</div>
+            </div>
+            <div style="background:var(--blue-xpale);border-radius:var(--radius-sm);padding:14px;border:1.5px solid var(--blue-pale);">
+              <div style="font-weight:800;font-size:.88rem;color:var(--blue-dark);margin-bottom:4px;">💰 Economía</div>
+              <div style="font-size:.8rem;color:var(--gray-500);">Reducen la dependencia de combustibles fósiles y sus costos variables.</div>
+            </div>
+            <div style="background:var(--blue-xpale);border-radius:var(--radius-sm);padding:14px;border:1.5px solid var(--blue-pale);">
+              <div style="font-weight:800;font-size:.88rem;color:var(--blue-dark);margin-bottom:4px;">🔬 Innovación</div>
+              <div style="font-size:.8rem;color:var(--gray-500);">Impulsan el desarrollo tecnológico y la creación de empleos verdes.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════ ACTIVIDADES ══════════════════ -->
+      <section class="section-panel" id="panel-actividades">
+        <h2 class="page-title">
+          <span class="pt-icon">🎯</span>
+          Actividades
+        </h2>
+        <p class="page-desc" id="act-desc">Pon a prueba lo que aprendiste con estas actividades interactivas.</p>
+
+        <!-- ACT 1: Crucigrama -->
+        <div class="card" id="panel-act1">
+          <div class="activity-header">
+            <div class="ah-num">1</div>
+            <div class="ah-info">
+              <div class="ah-type">Actividad 1</div>
+              <div class="ah-name">Crucigrama de Energías</div>
+            </div>
+          </div>
+          <p style="font-size:.88rem;color:var(--gray-500);margin-bottom:16px;">Lee las pistas y escribe la respuesta en cada casilla del crucigrama.</p>
+          <div class="crossword-wrap">
+            <div id="crossword-grid" class="crossword-grid"></div>
+            <div class="crossword-clues">
+              <div class="clue-section">
+                <div class="clue-title">➡️ Horizontal</div>
+                <div id="clues-across"></div>
+              </div>
+              <div class="clue-section" style="margin-top:14px;">
+                <div class="clue-title">⬇️ Vertical</div>
+                <div id="clues-down"></div>
+              </div>
+            </div>
+          </div>
+          <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:14px;">
+            <button class="act-submit" id="checkCrossword">✔ Verificar</button>
+            <button class="act-submit" style="background:var(--gray-500);" id="resetCrossword">🔄 Reiniciar</button>
+          </div>
+          <div class="feedback-msg" id="crossword-feedback"></div>
+          <div class="score-badge" id="crossword-score" style="display:none;"></div>
+        </div>
+
+        <!-- ACT 2: Ordenar pasos -->
+        <div class="card" id="panel-act2" style="display:none;margin-top:20px;">
+          <div class="activity-header">
+            <div class="ah-num">2</div>
+            <div class="ah-info">
+              <div class="ah-type">Actividad 2</div>
+              <div class="ah-name">Ordenar el Proceso</div>
+            </div>
+          </div>
+          <p style="font-size:.88rem;color:var(--gray-500);margin-bottom:16px;">Arrastra o usa los botones ↑ ↓ para ordenar correctamente los pasos del proceso de generación de energía solar.</p>
+          <div id="sort-list" class="sort-list"></div>
+          <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:14px;">
+            <button class="act-submit" id="checkSort">✔ Verificar</button>
+            <button class="act-submit" style="background:var(--gray-500);" id="resetSort">🔄 Reiniciar</button>
+          </div>
+          <div class="feedback-msg" id="sort-feedback"></div>
+          <div class="score-badge" id="sort-score" style="display:none;"></div>
+        </div>
+
+        <!-- ACT 3: Selección múltiple -->
+        <div class="card" id="panel-act3" style="display:none;margin-top:20px;">
+          <div class="activity-header">
+            <div class="ah-num">3</div>
+            <div class="ah-info">
+              <div class="ah-type">Actividad 3</div>
+              <div class="ah-name">Selección Múltiple</div>
+            </div>
+          </div>
+          <p style="font-size:.88rem;color:var(--gray-500);margin-bottom:16px;">Elige la opción correcta para cada pregunta.</p>
+          <div id="mc-list" class="mc-list"></div>
+          <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:14px;">
+            <button class="act-submit" id="checkMC">✔ Verificar</button>
+            <button class="act-submit" style="background:var(--gray-500);" id="resetMC">🔄 Reiniciar</button>
+          </div>
+          <div class="feedback-msg" id="mc-feedback"></div>
+          <div class="score-badge" id="mc-score" style="display:none;"></div>
+        </div>
+
+        <!-- ACT 4: Clasificar energías -->
+        <div class="card" id="panel-act4" style="display:none;margin-top:20px;">
+          <div class="activity-header">
+            <div class="ah-num">4</div>
+            <div class="ah-info">
+              <div class="ah-type">Actividad 4</div>
+              <div class="ah-name">Clasificar Energías</div>
+            </div>
+          </div>
+          <p style="font-size:.88rem;color:var(--gray-500);margin-bottom:16px;">Arrastra cada fuente de energía a la categoría correcta: ¿Renovable o No renovable?</p>
+          <div class="classify-bank" id="classify-bank"></div>
+          <div class="classify-cols">
+            <div class="classify-drop" id="drop-renovable">
+              <div class="classify-drop-title">♻️ Renovable</div>
+              <div class="classify-drop-zone" id="zone-renovable"></div>
+            </div>
+            <div class="classify-drop" id="drop-norenovable">
+              <div class="classify-drop-title">🏭 No Renovable</div>
+              <div class="classify-drop-zone" id="zone-norenovable"></div>
+            </div>
+          </div>
+          <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:14px;">
+            <button class="act-submit" id="checkClassify">✔ Verificar</button>
+            <button class="act-submit" style="background:var(--gray-500);" id="resetClassify">🔄 Reiniciar</button>
+          </div>
+          <div class="feedback-msg" id="classify-feedback"></div>
+          <div class="score-badge" id="classify-score" style="display:none;"></div>
+        </div>
+      </section>
+
+      <!-- ══════════════════ EXAMEN ══════════════════ -->
+      <section class="section-panel" id="panel-examen">
+        <h2 class="page-title">
+          <span class="pt-icon">📝</span>
+          Examen
+        </h2>
+        <p class="page-desc">Responde todas las preguntas y al final verás tu calificación. Necesitas 3.0 o más para aprobar.</p>
+
+        <div class="card" id="exam-card">
+          <div class="activity-header">
+            <div class="ah-num">📋</div>
+            <div class="ah-info">
+              <div class="ah-type">Evaluación Final</div>
+              <div class="ah-name">Energías Renovables — 10 preguntas</div>
+            </div>
+          </div>
+          <div id="exam-questions" class="exam-questions"></div>
+          <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:20px;" id="exam-btn-wrap">
+            <button class="act-submit" id="submitExam">📊 Ver Calificación</button>
+            <button class="act-submit" style="background:var(--gray-500);" id="resetExam">🔄 Reiniciar Examen</button>
+          </div>
+          <div id="exam-result" class="exam-result" style="display:none;"></div>
+        </div>
+      </section>
+
+      <!-- ══════════════════ RECURSOS ══════════════════ -->
+      <section class="section-panel" id="panel-recursos">
+        <h2 class="page-title">
+          <span class="pt-icon">🔗</span>
+          Recursos
+        </h2>
+        <p class="page-desc">Sitios web educativos recomendados para profundizar en el tema de energías renovables.</p>
+
+        <div class="card">
+          <div class="card-title"><span class="ct-icon">🌐</span> Páginas Educativas</div>
+          <div class="resource-list">
+            <a class="resource-item" href="https://www.nationalgeographic.es/medio-ambiente/energias-renovables" target="_blank">
+              <div class="ri-icon">🌍</div>
+              <div class="ri-body">
+                <div class="ri-title">National Geographic — Energías Renovables</div>
+                <div class="ri-url">nationalgeographic.es</div>
+              </div>
+              <div class="ri-arrow">→</div>
+            </a>
+            <a class="resource-item" href="https://www.idae.es/energias-renovables" target="_blank">
+              <div class="ri-icon">⚡</div>
+              <div class="ri-body">
+                <div class="ri-title">IDAE — Instituto para la Diversificación y Ahorro de la Energía</div>
+                <div class="ri-url">idae.es</div>
+              </div>
+              <div class="ri-arrow">→</div>
+            </a>
+            <a class="resource-item" href="https://www.un.org/es/climate-change/raising-ambition/renewable-energy" target="_blank">
+              <div class="ri-icon">🏛</div>
+              <div class="ri-body">
+                <div class="ri-title">Naciones Unidas — Energías Renovables</div>
+                <div class="ri-url">un.org</div>
+              </div>
+              <div class="ri-arrow">→</div>
+            </a>
+            <a class="resource-item" href="https://www.irena.org/Energy-Transition/Technology" target="_blank">
+              <div class="ri-icon">🔬</div>
+              <div class="ri-body">
+                <div class="ri-title">IRENA — Agencia Internacional de Energías Renovables</div>
+                <div class="ri-url">irena.org</div>
+              </div>
+              <div class="ri-arrow">→</div>
+            </a>
+            <a class="resource-item" href="https://www.explicacion.net/energias-renovables/" target="_blank">
+              <div class="ri-icon">📚</div>
+              <div class="ri-body">
+                <div class="ri-title">Explicación.net — Energías Renovables para Estudiantes</div>
+                <div class="ri-url">explicacion.net</div>
+              </div>
+              <div class="ri-arrow">→</div>
+            </a>
+            <a class="resource-item" href="https://www.educaplus.org/game/energias-renovables" target="_blank">
+              <div class="ri-icon">🎮</div>
+              <div class="ri-body">
+                <div class="ri-title">EducaPlus — Juegos Interactivos sobre Energía</div>
+                <div class="ri-url">educaplus.org</div>
+              </div>
+              <div class="ri-arrow">→</div>
+            </a>
+            <a class="resource-item" href="https://energiaysociedad.es/formacion/" target="_blank">
+              <div class="ri-icon">🎓</div>
+              <div class="ri-body">
+                <div class="ri-title">Energía y Sociedad — Formación y Educación</div>
+                <div class="ri-url">energiaysociedad.es</div>
+              </div>
+              <div class="ri-arrow">→</div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════ CRÉDITOS ══════════════════ -->
+      <section class="section-panel" id="panel-creditos">
+        <h2 class="page-title">
+          <span class="pt-icon">👥</span>
+          Créditos
+        </h2>
+        <p class="page-desc">Equipo responsable de la elaboración de este Objeto Virtual de Aprendizaje.</p>
+
+        <div class="credits-hero">
+          <h2>⚡ OVA — Energías Renovables</h2>
+          <p>Desarrollado como proyecto académico de Algoritmia · 2026</p>
+        </div>
+
+        <div class="card" style="margin-bottom:20px;">
+          <div class="card-title"><span class="ct-icon">🧑‍💻</span> Integrantes del Equipo</div>
+          <div class="team-grid">
+            <div class="team-card">
+              <div class="team-avatar placeholder"><img src="Jesús.jpeg" alt=""></div>
+              <div class="team-name">Jesús Saez</div>
+              <div class="team-role">Integrante</div>
+            </div>
+            <div class="team-card">
+  <div class="team-avatar">
+    <img src="Brayan.png" alt="Bayan Taime" class="avatar-img">
+  </div>
+  <div class="team-name">Bayan Taime</div>
+  <div class="team-role">Integrante</div>
+</div>
+            <div class="team-card">
+              <div class="team-avatar placeholder"><img src="Keyner ramos.jpeg" alt=""></div>
+              <div class="team-name">Keyner Ramos</div>
+              <div class="team-role">Integrante</div>
+            </div>
+            <div class="team-card">
+              <div class="team-avatar placeholder"><img src="Edward.jpeg" alt=""></div>
+              <div class="team-name">Edward Sibaja</div>
+              <div class="team-role">Integrante</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-title"><span class="ct-icon">🏛</span> Información Institucional</div>
+          <div class="credits-info-grid">
+            <div class="ci-block">
+              <div class="ci-label">Universidad</div>
+              <div class="ci-value">Universidad de Córdoba</div>
+            </div>
+            <div class="ci-block">
+              <div class="ci-label">Programa</div>
+              <div class="ci-value">Lic. Informática</div>
+            </div>
+            <div class="ci-block">
+              <div class="ci-label">Asignatura</div>
+              <div class="ci-value">Algoritmia</div>
+            </div>
+            <div class="ci-block">
+              <div class="ci-label">Docente a cargo</div>
+              <div class="ci-value">Liliana Pastrana</div>
+            </div>
+            <div class="ci-block">
+              <div class="ci-label">Institución destino</div>
+              <div class="ci-value">I.E. Cristóbal Colón</div>
+            </div>
+            <div class="ci-block">
+              <div class="ci-label">Año</div>
+              <div class="ci-value">2026</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- BOTTOM FOOTER -->
+  <footer class="bottom-footer">
+    <img class="logo-foot" src="OIP.webp" alt="Logo" onerror="this.style.display='none'" />
+    <span>🎓 Lic. Informática</span>
+    <span class="sep">|</span>
+    <span>🏛 Universidad de Córdoba</span>
+    <span class="sep">|</span>
+    <span>💻 Algoritmia</span>
+    <span class="sep">|</span>
+    <span>2026</span>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OVA — Energías Renovables</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* extra index-only styles */
+    body { background: var(--white); }
+    .particles {
+      position: fixed; inset: 0; pointer-events: none; z-index: 0; overflow: hidden;
+    }
+    .particle {
+      position: absolute; border-radius: 50%;
+      background: var(--blue-light); opacity: 0;
+      animation: particle-float linear infinite;
+    }
+    @keyframes particle-float {
+      0%   { opacity: 0; transform: translateY(100vh) scale(0); }
+      10%  { opacity: .12; }
+      90%  { opacity: .08; }
+      100% { opacity: 0; transform: translateY(-10vh) scale(1); }
+    }
+    .hero { z-index: 1; }
+  </style>
+</head>
+<body class="index-body">
+
+  <!-- Particles -->
+  <div class="particles" id="particles"></div>
+
+  <!-- TOP HEADER -->
+  <header class="top-header">
+    <div class="logo-area">
+      <img src="OIP.webp" alt="Logo Unicor" onerror="this.style.display='none'" />
+      <div class="header-title">
+        OVA · Energías Renovables
+        <span>Institución Educativa Cristóbal Colón · Grado 9</span>
+      </div>
+    </div>
+    <div style="font-size:.8rem;opacity:.7;font-weight:600;">2026</div>
+  </header>
+
+  <!-- HERO -->
+  <main class="hero">
+    <div class="hero-deco hero-deco-1"></div>
+    <div class="hero-deco hero-deco-2"></div>
+    <div class="hero-deco hero-deco-3"></div>
+
+    <div class="hero-badge">
+      <span class="dot"></span>
+      Objeto Virtual de Aprendizaje
+    </div>
+
+    <img
+      class="hero-cover-img"
+      src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=860&q=80"
+      alt="Energías renovables – paneles solares y molinos de viento"
+    />
+
+    <h1 class="hero-title">
+      Energías<br>
+      <span class="highlight">Renovables</span>
+    </h1>
+
+    <p class="hero-subtitle">
+      Descubre el poder del sol, el viento, el agua y la tierra.
+      Aprende cómo estas fuentes de energía limpias transforman nuestro planeta.
+    </p>
+
+    <div class="hero-meta">
+      <div class="hero-meta-item">
+        <span class="icon">☀️</span> Solar
+      </div>
+      <div class="hero-meta-item">
+        <span class="icon">💨</span> Eólica
+      </div>
+      <div class="hero-meta-item">
+        <span class="icon">💧</span> Hidráulica
+      </div>
+      <div class="hero-meta-item">
+        <span class="icon">🌿</span> Biomasa
+      </div>
+      <div class="hero-meta-item">
+        <span class="icon">🌋</span> Geotérmica
+      </div>
+    </div>
+
+    <a class="btn-continue" href="contenido.html">
+      Comenzar
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M5 12h14M12 5l7 7-7 7"/>
+      </svg>
+    </a>
+  </main>
+
+  <!-- INSTITUTIONS BAND -->
+  <div class="inst-band">
+    <div class="inst-band-item"><span class="i-icon">🏛</span> Universidad de Córdoba</div>
+    <div class="inst-band-item"><span class="i-icon">🎓</span> Lic. Informática</div>
+    <div class="inst-band-item"><span class="i-icon">💻</span> Algoritmia</div>
+    <div class="inst-band-item"><span class="i-icon">🏫</span> I.E. Cristóbal Colón</div>
+  </div>
+
+  <!-- BOTTOM FOOTER -->
+  <footer class="bottom-footer">
+    <img class="logo-foot" src="OIP.webp" alt="Logo" onerror="this.style.display='none'" />
+    <span>🎓 Lic. Informática</span>
+    <span class="sep">|</span>
+    <span>🏛 Universidad de Córdoba</span>
+    <span class="sep">|</span>
+    <span>💻 Algoritmia</span>
+    <span class="sep">|</span>
+    <span>2026</span>
+  </footer>
+
+  <script>
+    // Generate floating particles
+    const container = document.getElementById('particles');
+    for (let i = 0; i < 18; i++) {
+      const p = document.createElement('div');
+      p.className = 'particle';
+      const size = 6 + Math.random() * 16;
+      p.style.cssText = `
+        width:${size}px; height:${size}px;
+        left:${Math.random()*100}%;
+        animation-duration:${8 + Math.random()*12}s;
+        animation-delay:${Math.random()*10}s;
+      `;
+      container.appendChild(p);
+    }
+  </script>
+</body>
+</html>
